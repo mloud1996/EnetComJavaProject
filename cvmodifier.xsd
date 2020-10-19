@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="cv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Information_Personnel"/>
+        <xs:element ref="Cursus_Universitaires"/>
+        <xs:element ref="Competences"/>
+        <xs:element ref="Projets"/>
+        <xs:element ref="Langues"/>
+        <xs:element ref="Stages"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Information_Personnel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Nom" type="xs:string"/>
+        <xs:element name="Prenom" type="xs:string"/>
+        <xs:element name="Statut" type="xs:string"/>
+        <xs:element name="Motivation" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cursus_Universitaires">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Diplome" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Diplome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Etablissement" type="xs:string"/>
+        <xs:element name="Série" type="xs:string" minOccurs="0"/>
+        <xs:element name="Specialiter" type="xs:string" minOccurs="0"/>
+        <xs:element ref="Année"/>
+        <xs:element name="rang" type="xs:string" minOccurs="0"/>
+        <xs:element name="Mention" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="nom" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Année">
+    <xs:complexType mixed="true">
+      <xs:attribute name="DEBUT" type="xs:string"/>
+      <xs:attribute name="FIN" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Competences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Competence" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Competence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="niveau" type="xs:string"/>
+        <xs:element name="type" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="nom" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Projets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Projet" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Projet">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Sujet" type="xs:string"/>
+        <xs:element name="Incubateur" type="xs:string"/>
+        <xs:element name="Lieu" type="xs:string"/>
+        <xs:element ref="Année"/>
+        <xs:element name="Technologie" type="xs:string"/>
+      </xs:choice>
+      <xs:attribute name="nom" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Langues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="langue" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="langue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="niveau" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="nom" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Stages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Stage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Stage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Entreprise" type="xs:string"/>
+        <xs:element name="Lieux" type="xs:string"/>
+        <xs:element ref="Année"/>
+        <xs:element name="Sujet" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="Intitule" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,95 @@
+<!ELEMENT cv (Information_Personnel, Cursus_Universitaire, CompÃ©tence, Projet, Langue, Stage)>
+<!ELEMENT Information_Personnel (Nom, Prenom, Statut, Motivation)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Prenom (#PCDATA)>
+<!ELEMENT Statut (#PCDATA)>
+<!ELEMENT Motivation (#PCDATA)>
+<!ELEMENT Cursus_Universitaire (Bac, ConCours_National_Dingenieurie_Mauritanien, Ecole_Superieur_Polytechnique_de_Nouakchott, Double_Diplomation)>
+<!ELEMENT Bac (Etablissement, AnnÃ©e, Mention)>
+<!ELEMENT Etablissement (#PCDATA)>
+<!ELEMENT AnnÃ©e (#PCDATA)>
+<!ATTLIST AnnÃ©e
+          DEBUT CDATA #IMPLIED
+          FIN CDATA #IMPLIED>
+<!ELEMENT Mention (#PCDATA)>
+<!ELEMENT ConCours_National_Dingenieurie_Mauritanien (Etablissement, AnnÃ©e, rang)>
+<!ELEMENT rang (#PCDATA)>
+<!ELEMENT Ecole_Superieur_Polytechnique_de_Nouakchott (Specialiter, Premier_AnnÃ©e, Deuxieme_AnnÃ©e)>
+<!ELEMENT Specialiter (#PCDATA)>
+<!ELEMENT Premier_AnnÃ©e (#PCDATA)>
+<!ATTLIST Premier_AnnÃ©e
+          DEBUT CDATA #REQUIRED
+          FIN CDATA #REQUIRED>
+<!ELEMENT Deuxieme_AnnÃ©e (#PCDATA)>
+<!ATTLIST Deuxieme_AnnÃ©e
+          DEBUT CDATA #REQUIRED
+          FIN CDATA #REQUIRED>
+<!ELEMENT Double_Diplomation (Ecole_Partenaire, Specialiter)>
+<!ELEMENT Ecole_Partenaire (#PCDATA)>
+<!ATTLIST Ecole_Partenaire
+          nom CDATA #REQUIRED>
+<!ELEMENT CompÃ©tence (Language_De_Programmation, System_dexploitation, Framework, Plateforme, DataBase, Technique_de_Conception_et_de_modelisation_informatique, Gestion_de_projet)>
+<!ELEMENT Language_De_Programmation (#PCDATA)>
+<!ATTLIST Language_De_Programmation
+          niveau CDATA #REQUIRED
+          nom CDATA #REQUIRED>
+<!ELEMENT System_dexploitation (#PCDATA)>
+<!ATTLIST System_dexploitation
+          niveau CDATA #REQUIRED
+          nom CDATA #REQUIRED>
+<!ELEMENT Framework (#PCDATA)>
+<!ATTLIST Framework
+          niveau1 CDATA #REQUIRED
+          niveau2 CDATA #REQUIRED
+          niveau3 CDATA #REQUIRED
+          niveau4 CDATA #REQUIRED
+          niveau5 CDATA #REQUIRED
+          nom1 CDATA #REQUIRED
+          nom2 CDATA #REQUIRED
+          nom3 CDATA #REQUIRED
+          nom4 CDATA #REQUIRED
+          nom5 CDATA #REQUIRED>
+<!ELEMENT Plateforme (#PCDATA)>
+<!ATTLIST Plateforme
+          niveau CDATA #REQUIRED
+          nom CDATA #REQUIRED>
+<!ELEMENT DataBase (#PCDATA)>
+<!ATTLIST DataBase
+          niveau1 CDATA #REQUIRED
+          niveau2 CDATA #REQUIRED
+          nom1 CDATA #REQUIRED
+          nom2 CDATA #REQUIRED>
+<!ELEMENT Technique_de_Conception_et_de_modelisation_informatique (#PCDATA)>
+<!ATTLIST Technique_de_Conception_et_de_modelisation_informatique
+          niveau1 CDATA #REQUIRED
+          niveau2 CDATA #REQUIRED
+          nom1 CDATA #REQUIRED
+          nom2 CDATA #REQUIRED>
+<!ELEMENT Gestion_de_projet (#PCDATA)>
+<!ATTLIST Gestion_de_projet
+          niveau CDATA #REQUIRED>
+<!ELEMENT Projet (Projet_de_Creation_innovation_premier_annÃ©e_ingÃ©nieur?, Projet_Industrielle_deuxieme_annÃ©e_ingÃ©nieur?, Projet_de_developpement_informatique?, Prix_De_Kosmos_Entrepreneurship_Competition?)>
+<!ATTLIST Projet
+          nom CDATA #IMPLIED>
+<!ELEMENT Projet_de_Creation_innovation_premier_annÃ©e_ingÃ©nieur (AnnÃ©e, Sujet)>
+<!ELEMENT Sujet (#PCDATA)>
+<!ELEMENT Projet_Industrielle_deuxieme_annÃ©e_ingÃ©nieur (AnnÃ©e, Sujet, lieu)>
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT Projet_de_developpement_informatique (Sujet, Technologie)>
+<!ELEMENT Technologie (#PCDATA)>
+<!ELEMENT Prix_De_Kosmos_Entrepreneurship_Competition (Incubateur, Lieu, AnnÃ©e, Projet)>
+<!ELEMENT Incubateur (#PCDATA)>
+<!ELEMENT Lieu (#PCDATA)>
+<!ELEMENT Langue (FranÃ§ais, Anglais, Arab)>
+<!ELEMENT FranÃ§ais (Certificat)>
+<!ELEMENT Certificat (#PCDATA)>
+<!ELEMENT Anglais (#PCDATA)>
+<!ATTLIST Anglais
+          niveau CDATA #REQUIRED>
+<!ELEMENT Arab (#PCDATA)>
+<!ATTLIST Arab
+          niveau CDATA #REQUIRED>
+<!ELEMENT Stage (Attestation_de_Stage)>
+<!ELEMENT Attestation_de_Stage (Entreprise, Lieux, AnnÃ©e, Sujet)>
+<!ELEMENT Entreprise (#PCDATA)>
+<!ELEMENT Lieux (#PCDATA)>
