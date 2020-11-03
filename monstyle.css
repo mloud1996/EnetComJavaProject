@@ -1,0 +1,220 @@
+<style type="text/css">
+cv ,
+Information_Personne {
+display: block;
+    width: 250px;
+    font-size: 16pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 10px;
+}
+nom {
+  display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px  
+}
+Prenom {
+    display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px 
+}
+
+Statut {
+    display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px
+}
+
+Motivation {
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+Cursus_Universitaires {
+ display: block;
+    width: 250px;
+    font-size: 16pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 10px;
+}
+Diplome {
+display: block;
+    width: 150px;
+    font-size: 10pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 5px;
+
+}
+Etablissement{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+
+
+}
+
+S�rie{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+
+
+
+}
+Ann�e{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+
+
+}
+Mention{
+      display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+
+
+}
+Specialiter{
+      display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+
+rang{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+
+}
+
+Competences{
+ display: block;
+    width: 250px;
+    font-size: 16pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 10px;
+}
+Competence{
+ display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px  
+
+}
+niveau{
+   display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+type{
+     display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+
+Projets{
+  display: block;
+    width: 250px;
+    font-size: 16pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 10px;
+}
+Projet{
+    display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px
+}
+
+Ann�e{
+ display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+
+Sujet{
+   display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+Technologie{
+     display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+Lieu{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    font-family: arial ;
+    padding-left: 10px;
+}
+
+Langues{
+    display: block;
+    width: 250px;
+    font-size: 16pt ;
+    font-family: arial ;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    padding-left: 10px;
+
+}
+langue{
+      display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+</style>
+
