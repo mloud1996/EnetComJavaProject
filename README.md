@@ -1,2 +1,2 @@
 # EnetComJavaProject
-I just given my xml exercice for the xml and java project
+Hello welcome to my EnetcomJavaxml staff
